@@ -1,0 +1,130 @@
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="bg-image">
+          <img src="img/rack.jpg" />
+        </div>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 class="textcolor">What is archival fashion?</h1>
+            <p class="textcolor">designer clothes from the past that is being worn now and is important and innovative to fashion history.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="bg-image">
+          <img src="img/2people.jpg" />
+          </div>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="textcolor">Archive definition.</h1>
+            <p class="textcolor">a collection of historical documents or records providing information about a place, institution, or group of people.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="bg-image">
+          <img src="img/fashion.jpeg"/>
+          </div>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1 class="textcolor">Why is Archival fashion so popular?</h1>
+            <p class="textcolor">it's thrifiting, but for people too rich to admit it's thrifitng.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+
+/*  CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 64px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 48px;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 512px;
+}
+
+/* blurred image css
+-------------------------------------------------- */
+.bg-image{
+filter: blur(4px);
+margin-bottom: 500px;
+}
+
+
+
+/* FEAUTRES
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing:0px;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 112px;
+  }
+}
+
+/* text color css
+-------------------------------------------------- */
+.textcolor{
+  color: #FFFFFF;
+  text-shadow: 0 0 30px black
+ 
+}
+
