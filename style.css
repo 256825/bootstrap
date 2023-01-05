@@ -38,6 +38,10 @@ NAVBAR
   z-index: 10;
 }
 
+.carousel-caption h5{
+  font-size: 30px;
+}
+
 /* blurred image css
 -------------------------------------------------- */
 
@@ -101,4 +105,3 @@ NAVBAR
  max-width: fit-content;
 }
 
-.text-size {
